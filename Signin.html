@@ -16,8 +16,9 @@
             cursor: pointer;
         }
         img{
-            width: 220px;
-            margin-left: 20px;
+            width: 235px;
+            margin-left: -200px;
+            margin-top: 20px;
         }
         #form{
             width: 400px;
@@ -138,7 +139,7 @@
 </head>
 <body>
     <div class="logo">
-        <img src="https://uidesign.gbtcdn.com/GB/images/promotion/2019/a_evan/Gearbest/logo_gearbest.png" alt="">
+        <a href="index.html" target="_blank"><img src="https://uidesign.gbtcdn.com/GB/images/promotion/2019/a_evan/Gearbest/logo_gearbest.png" alt=""></a>
     </div>
     <form id="form" action="">
        <div class="tpbtn">
@@ -151,7 +152,7 @@
        <a style="color:grey ;" href="https://login.gearbest.com/reset-password.html">Forgot Password?</a>
        <input id="button" type="submit" value= "Sign In" >
        <p>or connect via</p>
-       <div id="gimg" onclick="gmail()">
+       <div id="gimg">
         <a href="https://accounts.google.com/o/oauth2/v2/auth?client_id=643156394993-6mlvl2ls6f900t3fg9qr16v536fes0gq.apps.googleusercontent.com&redirect_uri=https%3A%2F%2Flogin.gearbest.com%2Fsocial%2Ffacade%2F2&response_type=code&scope=email+profile&display=popup" target="_blank"><img src="https://pbs.twimg.com/profile_images/1455185376876826625/s1AjSxph_400x400.jpg" alt=""></a>
        </div>
     </form>
@@ -179,7 +180,7 @@
         if(checkSignin(data.email,data.password)===true){
             localStorage.setItem("Signin",JSON.stringify(data));
             // alert("Sign in Successful");
-            window.location.href="paytm.html";// Rishav file
+            window.location.href="index.html";
 
         }
         else{
